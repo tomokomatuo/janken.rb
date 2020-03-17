@@ -4,15 +4,16 @@ class Player
     puts "0:グー, 1:チョキ, 2:パー"
     input_hand = gets.chomp
 
-    # while 
+    while true
       if input_hand == "0" || input_hand == "1" || input_hand == "2"
         return input_hand.to_i
-      else 
+      else
         puts "無効な値です。もう一度数字を入力してください。"
         puts "0:グー, 1:チョキ, 2:パー"
-     　　input_hand = gets.chomp
-        input_hand.to_i
+        input_hand = gets.chomp
+        # input_hand.to_i
       end
+    end
   end
 end
 # binding.irb
@@ -68,6 +69,6 @@ end# janken.pon(player.hand, enemy.hand)
 # while next_game
 # 変数「next_game」にじゃんけんを実行して返ってきた値(戻り値)を代入します。
   # 「janken.pon(player.hand, enemy.hand)」でじゃんけんを実行しています。
-  
+
   # じゃんけんの実行結果に「false」が返ってくると、このwhileを終了します。「true」が返ってくると、その回数だけ繰り返し続けます。
 # end while文のend
